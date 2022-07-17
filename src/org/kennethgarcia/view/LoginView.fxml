@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="832.0" style="-fx-background-color: #1A1D54;" stylesheets="@../resources/css/estiloVistas.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kennethgarcia.controller.LoginController">
+   <children>
+      <VBox layoutX="6.0" layoutY="206.0" prefHeight="268.0" prefWidth="61.0" />
+      <Pane layoutX="362.0" layoutY="125.0" prefHeight="246.0" prefWidth="317.0" style="-fx-background-color: #24CA98;">
+         <children>
+            <Label layoutX="79.0" layoutY="14.0" prefHeight="54.0" prefWidth="159.0" text="Inicia sesión aqui.">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="77.0" prefHeight="26.0" prefWidth="61.0" text="Usuario:">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="123.0" text="Contraseña:">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsuario" layoutX="111.0" layoutY="78.0" prefHeight="25.0" prefWidth="159.0" />
+            <Button fx:id="btnEntrar" layoutX="102.0" layoutY="175.0" mnemonicParsing="false" onAction="#validarUsuario" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: #1A1D54;" text="Entrar" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="txtContrasenia" layoutX="111.0" layoutY="121.0" prefHeight="25.0" prefWidth="159.0" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="151.0" fitWidth="245.0" layoutX="104.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/image/fondo%20definitivo_auto_x2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

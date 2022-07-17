@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="688.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kennethgarcia.controller.AutorController">
+   <children>
+      <ImageView fitHeight="184.0" fitWidth="190.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/image/Yo.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="257.0" layoutY="17.0" prefHeight="26.0" prefWidth="245.0" text="Informacion del Autor.">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="74.0" fitWidth="111.0" layoutX="563.0" layoutY="14.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/image/back-button.2a9814d.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="524.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/image/Free_Sample_By_Wix%20(2).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="180.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.5;">
+         <image>
+            <Image url="@../resources/image/sin%20fondo.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="249.0" layoutY="72.0" prefHeight="200.0" prefWidth="425.0">
+         <children>
+            <VBox prefHeight="161.0" prefWidth="88.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="76.0" text="Nombre:">
+                     <font>
+                        <Font name="HoloLens MDL2 Assets" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="76.0" text="Jornada:">
+                     <font>
+                        <Font name="HoloLens MDL2 Assets" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="65.0" text="Grado:">
+                     <font>
+                        <Font name="HoloLens MDL2 Assets" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="76.0" text="Sección:">
+                     <font>
+                        <Font name="HoloLens MDL2 Assets" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="330.0">
+               <children>
+                  <Label prefHeight="41.0" prefWidth="307.0" text="Kenneth Gerardo Garcia Lemus.">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="106.0" text="Matutina.">
+                     <font>
+                        <Font name="HoloLens MDL2 Assets" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="103.0" text="5to Perito.">
+                     <font>
+                        <Font name="HoloLens MDL2 Assets" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="76.0" text="D.">
+                     <font>
+                        <Font name="HoloLens MDL2 Assets" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

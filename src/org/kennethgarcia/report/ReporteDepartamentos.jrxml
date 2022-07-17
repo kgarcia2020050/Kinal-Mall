@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteDepartamentos" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e7cbf13d-83b0-4325-ba5d-96aebe49a138">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="6"/>
+	<parameter name="LOGO_HEADER" class="java.io.InputStream"/>
+	<parameter name="LOGO_FOOTER" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[select * from Departamentos]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="117" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="4" width="183" height="113" uuid="68d77ca3-7a8d-4969-9ba9-eac96dec6d62"/>
+				<imageExpression><![CDATA[$P{LOGO_HEADER}]]></imageExpression>
+			</image>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="652" y="97" width="100" height="20" uuid="e7961683-6f75-4b65-b250-55abe68b56ae"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="322" y="4" width="100" height="20" uuid="4e45982b-a26a-4b3c-9d7e-7a687000f338"/>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[KINAL MALL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="36" width="380" height="21" uuid="105ec091-1d5c-4c07-b5db-a215eed6c13d"/>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[6 Avenida 13-54, Colonia Landívar, Zona 7, Guatemala]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="67" width="137" height="20" uuid="91964a47-58c6-478d-b5c6-f8722670368a"/>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono: 22160000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="97" width="100" height="20" uuid="e1ce0322-389f-4081-b650-23e1446cd9a7"/>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[NIT: 756984-9]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="74" splitType="Stretch">
+			<staticText>
+				<reportElement x="202" y="16" width="386" height="41" uuid="2b1fe9c4-61da-4c13-8e65-f700ccc283d1"/>
+				<textElement>
+					<font size="26" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DEPARTAMENTOS]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="21" width="752" height="1" forecolor="#20336B" uuid="3ae145ea-ec3e-4906-9492-9b53934b7a62"/>
+			</line>
+			<staticText>
+				<reportElement x="29" y="2" width="100" height="20" uuid="78d5dab8-9137-44b0-bd71-df80a6203da2"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="347" y="2" width="100" height="20" uuid="180d295b-170d-4653-97ab-97955643abfb"/>
+				<text><![CDATA[Departamento]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="58" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="16" width="752" height="19" forecolor="#C3AB2F" uuid="16ba76ad-a6b4-48e5-afd5-4da98c9bd263"/>
+			</rectangle>
+			<textField>
+				<reportElement x="29" y="16" width="100" height="20" uuid="77a7cfa7-82f0-45d1-90b5-a13042d6b15e"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="18" width="158" height="20" uuid="2fcb1eea-df82-4ade-b2fa-b64edfbe36cd"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="91">
+			<image>
+				<reportElement x="663" y="0" width="198" height="88" uuid="4e2093e0-2571-4c48-aa60-fee242955e55"/>
+				<imageExpression><![CDATA[$P{LOGO_FOOTER}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="15" y="16" width="227" height="72" forecolor="#999999" uuid="205fcaaf-9ffb-4117-aec6-214c3a6600a0"/>
+				<textElement verticalAlignment="Top">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Kenneth Gerardo García Lemus       kgarcia-2020050@kinal.edu.gt IN5BM]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="752" height="1" forecolor="#20336B" uuid="04203294-d605-4e8d-b6e2-363629eedba6"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>

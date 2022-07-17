@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #1A1D54;" stylesheets="@../resources/css/estiloKinalMall.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kennethgarcia.controller.MenuPrincipalController">
+   <children>
+      <MenuBar layoutX="823.0" layoutY="2.0" prefHeight="18.0" prefWidth="137.0" stylesheets="@../resources/css/estiloKinalMall.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarVistaClientes" text="Clientes" />
+              <MenuItem mnemonicParsing="false" onAction="#mostrarVistaEmpleados" text="Empleados" />
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarProveedores" text="Proveedores" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mostrarVistaAutor" text="Autor" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="218.0" fitWidth="1040.0" layoutX="286.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/image/fondo%20definitivo_auto_x2.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="823.0" layoutY="476.0" mnemonicParsing="false" onAction="#btnRegresar" prefHeight="50.0" prefWidth="118.0" style="-fx-background-color: #24CA98;" text="SALIR">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

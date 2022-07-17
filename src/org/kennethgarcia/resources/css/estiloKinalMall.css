@@ -1,0 +1,29 @@
+/* 
+    Created on : 12/05/2021, 10:56:41
+    Author     : Kenneth Gerardo Garcia Lemus
+*/
+.menu-bar{
+    -fx-text-fill:white;
+    -fx-background-color: #24CA98;
+    -fx-font-size:12;
+    -fx-font-weight:bold;
+}
+
+
+.menu-bar :hover{
+    -fx-text-fill:white;
+    -fx-background-color: #24CA98;
+    -fx-font-size:12;
+    -fx-font-weight:bold;
+}
+
+
+.menu-bar .menu-button :hover{
+    -fx-text-fill: white;
+    -fx-background-color:skyblue;
+    
+}
+
+.menu-bar .menu-item{
+    -fx-background-color: #24CA98;
+}
